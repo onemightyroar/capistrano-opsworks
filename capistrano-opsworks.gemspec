@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Capistrano::Opsworks::VERSION
   spec.authors       = ["Brian Muse"]
   spec.email         = ["brian@onemightyroar.com"]
-  spec.description   = "Opsworks deployment triggers"
-  spec.summary       = "Opsworks deployment triggers"
+  spec.description   = "Opsworks deployment trigger for capistrano"
+  spec.summary       = "Opsworks deployment trigger for capistrano"
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -20,5 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
-  spec.add_development_dependency "aws-sdk"
+  spec.add_runtime_dependency "aws-sdk"
 end
