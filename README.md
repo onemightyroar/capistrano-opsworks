@@ -40,4 +40,5 @@ set :comment, '[string]'        #optional
 set :custom_json, '[string]'    #optional
 ```
 
-_Built by [Brian Muse](https://github.com/brianmuse)_
+## Contributors
+* [Brian Muse](https://github.com/brianmuse)_
