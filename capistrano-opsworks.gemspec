@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Brian Muse"]
   spec.email         = ["brian@onemightyroar.com"]
   spec.description   = "Opsworks deployment trigger for capistrano"
-  spec.summary       = "Opsworks deployment trigger for capistrano"
-  spec.homepage      = ""
+  spec.summary       = "Allows you to trigger a deployment for an opsworks application from a remote capistrano project"
+  spec.homepage      = "http://brianmuse.com"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
