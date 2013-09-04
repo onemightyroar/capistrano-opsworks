@@ -1,4 +1,4 @@
-# Capistrano::Opsworks
+# Capistrano Opsworks
 
 This gem allows you to trigger opsworks deployments from a remote capistrano project
 
@@ -41,4 +41,4 @@ set :custom_json, '[string]'    #optional
 ```
 
 ## Contributors
-* [Brian Muse](https://github.com/brianmuse)_
+* [Brian Muse](https://github.com/brianmuse)
