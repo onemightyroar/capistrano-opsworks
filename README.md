@@ -1,6 +1,6 @@
 # Capistrano::Opsworks
 
-TODO: Write a gem description
+This gem allows you to trigger opsworks deployments from a remote capistrano project
 
 ## Installation
 
@@ -18,12 +18,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add the following to your deploy script:
+```Ruby
+set :deploy_via, :opsworks
+require 'capistrano/opsworks'
+```
 
-## Contributing
+The opsworks strategy overwrites the built in deployment tasks, so you should only `require 'capistrano/opsworks'` if you are using the opsworks deployment strategy.
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+The following options are allowed:
+```Ruby
+set :aws_key_id, '[string]'     #required
+set :aws_secret_key, '[string]' #required
+set :app_id, '[string]'         #required
+set :command_name, '[string]'   #required (eg. 'deploy')
+set :stack_id, '[string]'       #required
+
+set :instance_ids, '[array]'    #optional
+set :command_args, '[hash]'     #optional
+set :comment, '[string]'        #optional
+set :custom_json, '[string]'    #optional
+```
+
+_Built by [Brian Muse](https://github.com/brianmuse)_
